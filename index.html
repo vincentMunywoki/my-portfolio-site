@@ -42,35 +42,50 @@
                         and user training. Skilled in network infrastructure management. </p>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>Web Development</span><br>Web App Development</li>
                                 <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                                 <li><span>Database Admin</span><br>Creating and managing Databases</li>
                             </ul>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>July 2024 - Current</span><br>Lead product Designer at Havalaa Technologies</li>
                                 <li><span>May 2023 - Aug 2023</span><br>ICT Support Intern at JKUAT</li>
                                 <li><span>May 2022 - Aug 2022</span><br>ICT Attachee at KNK solutions</li>
                             </ul>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>Web Development</span><br>Web App Development</li>
-                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span>Database Admin</span><br>Creating and managing Databases</li>
+                                <li><span>2020 - 2024</span><br>Bachelor of science in Information Technology at the University of Embu</li>
+                                <li><span>2016 - 2019</span><br>KCSE at Thatha High school</li>
                             </ul>
                         </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+      
+    </script>
     
 </body>
 </html>
