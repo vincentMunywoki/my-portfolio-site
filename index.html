@@ -166,9 +166,9 @@
                 <a href="img/Vincent Munywoki CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="" placeholder="your name" required>
-                    <input type="email" name="email" placeholder="your email" required>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
                     <textarea name="Message" id="" rows="6" placeholder="Write your message here"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -207,6 +207,18 @@
             sidemenu.style.right= "-200px";
         }
     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6z4nGVJL5rVt0UprzYJU3D0uwC_NrvNMwsxxLazZkwcD0wPg3iZxlaHYf7ckTH1Y19Q/execL'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     
 </body>
 </html>
