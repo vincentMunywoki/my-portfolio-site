@@ -12,16 +12,16 @@
         <div class="container">
             <nav>
                 <img src="img/logo.png" class="logo" alt="This is my logo." width="70px" height="70px">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>FRONT END Designer</p>
@@ -196,6 +196,16 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
       
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
     </script>
     
 </body>
