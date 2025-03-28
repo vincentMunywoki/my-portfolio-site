@@ -1,4 +1,4 @@
-This is prsonal portfolio developed using HTML, CSS and Javascript.
+# This is prsonal portfolio developed using HTML, CSS and Javascript.
 
 Submit a Form to Google Sheets | Demo
 How to create an HTML form that stores the submitted form data in Google Sheets using plain 'ol JavaScript (ES6), Google Apps Script, Fetch and FormData.
