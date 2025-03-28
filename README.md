@@ -1,6 +1,6 @@
 # This is prsonal portfolio developed using HTML, CSS and Javascript.
 
-Submit a Form to Google Sheets | Demo
+## Submit a Form to Google Sheets | Demo
 How to create an HTML form that stores the submitted form data in Google Sheets using plain 'ol JavaScript (ES6), Google Apps Script, Fetch and FormData.
 1. Create a new Google Sheet
 First, go to Google Sheets and Start a new spreadsheet with the Blank template.
