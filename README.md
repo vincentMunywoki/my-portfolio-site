@@ -7,10 +7,12 @@ First, go to Google Sheets and Start a new spreadsheet with the Blank template.
 Rename it Email Subscribers. Or whatever, it doesn't matter.
 Put the following headers into the first row:
 A	B	C	...
-1	timestamp	email		
+1	timestamp	email
+
+
 To learn how to add additional input fields, checkout section 7 below.
 
-2. Create a Google Apps Script
+3. Create a Google Apps Script
 Click on Tools > Script Editor… which should open a new tab.
 Rename it Submit Form to Google Sheets. Make sure to wait for it to actually save and update the title before editing the script.
 Now, delete the function myFunction() {} block within the Code.gs tab.
